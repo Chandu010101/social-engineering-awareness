@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Important Payroll Update</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f6f8;
+            text-align: center;
+            padding: 60px;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            width: 450px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 12px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .warning {
+            margin-top: 20px;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>⚠️ Action Required: Payroll Verification</h2>
+    <p>Please verify your payroll details immediately to avoid salary delay.</p>
+
+    <button onclick="showTraining()">Verify Now</button>
+
+    <div id="message" class="warning"></div>
+</div>
+
+<script>
+function showTraining() {
+    document.getElementById("message").innerHTML =
+    "🔐 This was a Security Awareness Simulation!<br><br>" +
+    "Red Flags in this message:<br>" +
+    "• Urgent language (\"Immediate action required\")<br>" +
+    "• Generic message<br>" +
+    "• Unexpected payroll verification request<br><br>" +
+    "Always verify suspicious emails with IT Security.";
+}
+</script>
+
+</body>
+</html>
